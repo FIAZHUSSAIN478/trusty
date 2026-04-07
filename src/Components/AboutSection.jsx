@@ -35,7 +35,7 @@ export default function AboutSection() {
           </div>
 
           <div className="mx-auto mt-6 max-w-232.5 overflow-hidden rounded-[18px]">
-            <img
+            <Image
               src={aboutImages.founder}
               alt="Founder"
               width={1200}
