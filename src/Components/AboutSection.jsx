@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const aboutImages = {
-  founder: "/images/about1.svg",
-  orbit1: "/images/aboutorbit1.svg",
-  orbit2: "/images/aboutorbit2.svg",
-  orbit3: "/images/aboutorbit3.svg",
-  orbit4: "/images/aboutorbit4.svg",
-  orbit5: "/images/aboutorbit5.svg",
+  founder: "/Images/about1.svg",
+  orbit1: "/Images/aboutorbit1.svg",
+  orbit2: "/Images/aboutorbit2.svg",
+  orbit3: "/Images/aboutorbit3.svg",
+  orbit4: "/Images/aboutorbit4.svg",
+  orbit5: "/Images/aboutorbit5.svg",
 };
 
 export default function AboutSection() {

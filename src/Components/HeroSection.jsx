@@ -8,13 +8,13 @@ import {
 } from "lucide-react";
 
 const categories = [
-  { name: "Electronics", image: "/images/heroicon1.svg" },
-  { name: "Clothing", image: "/images/heroicon2.svg" },
-  { name: "Real Estate", image: "/images/heroicon3.svg" },
-  { name: "Hotels", image: "/images/heroicon4.svg" },
-  { name: "Bank", image: "/images/heroicon5.svg" },
-  { name: "Restaurants", image: "/images/heroicon6.svg" },
-  { name: "Furniture Store", image: "/images/heroicon7.svg" },
+  { name: "Electronics", image: "/Images/heroicon1.svg" },
+  { name: "Clothing", image: "/Images/heroicon2.svg" },
+  { name: "Real Estate", image: "/Images/heroicon3.svg" },
+  { name: "Hotels", image: "/Images/heroicon4.svg" },
+  { name: "Bank", image: "/Images/heroicon5.svg" },
+  { name: "Restaurants", image: "/Images/heroicon6.svg" },
+  { name: "Furniture Store", image: "/Images/heroicon7.svg" },
 ];
 
 function ReviewCard({ image, align = "left" }) {
@@ -80,8 +80,8 @@ export default function HeroSection() {
           <div className="absolute left-[-80px] top-[120px] w-[280px] h-[280px] bg-[#DDF3EA] rounded-full blur-3xl opacity-70" />
           <div className="absolute right-[-60px] top-[60px] w-[260px] h-[260px] bg-[#EAF7F1] rounded-full blur-3xl opacity-80" />
 
-          <ReviewCard image="/images/heroleft.svg" align="left" />
-          <ReviewCard image="/images/heroright.svg" align="right" />
+          <ReviewCard image="/Images/heroleft.svg" align="left" />
+          <ReviewCard image="/Images/heroright.svg" align="right" />
 
           <div className="relative z-10 max-w-[920px] mx-auto text-center pt-6 lg:pt-10">
             <h1 className="text-[#1D2B4F] font-poppins font-semibold text-center font-extrabold tracking-[-0.03em] max-w-[760px] mx-auto text-[28px] sm:text-[34px] md:text-[42px] lg:text-[50px] leading-[38px] sm:leading-[46px] md:leading-[56px] lg:leading-[70px]">
@@ -96,7 +96,7 @@ export default function HeroSection() {
               </p>
 
               <img
-                src="/images/hero1.svg"
+                src="/Images/hero1.svg"
                 alt="arrow"
                 className="hidden lg:block absolute -right-[130px] -top-[70px] w-[92px] h-auto"
               />

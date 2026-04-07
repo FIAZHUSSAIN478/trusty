@@ -17,11 +17,11 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="h-[105px] border-b border-[#17253F26] bg-[url('/images/Hero-bg.svg')] bg-cover bg-start ">
+    <div className="h-[105px] border-b border-[#17253F26] bg-[url('/Images/Hero-bg.svg')] bg-cover bg-start ">
       <div className="max-w-7xl lg:px-30  mx-auto flex items-center justify-between h-full">
 
         <Image
-          src="/images/Logo1.svg"
+          src="/Images/logo1.svg"
           alt="trusty logo"
           width={168}
           height={51}
@@ -95,7 +95,7 @@ export default function Navbar() {
         </div>
       )}
       {menuOpen && (
-        <div className="lg:hidden bg-[url('/images/Hero-bg.svg')] bg-cover bg-start   ">
+        <div className="lg:hidden bg-[url('/Images/Hero-bg.svg')] bg-cover bg-start   ">
           {navItems.map((item) => (
             <Link key={item.name} href={item.href} className="text-[#17253F] font-medium border-b border-[#17253F26] w-full flex flex-col justify-center items-center md:items-start p-2 px-4 w-full gap-4">
               {item.name}

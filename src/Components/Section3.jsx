@@ -6,37 +6,37 @@ export default function Section3() {
       name: "Tech Wizards",
       website: "techwizards.com",
       user: "Courtney Henry",
-      avatar: "/images/section3user1.svg",
+      avatar: "/Images/section3user1.svg",
     },
     {
       name: "Tech Wizards",
       website: "techwizards.com",
       user: "Arlene McCoy",
-      avatar: "/images/section3user2.svg",
+      avatar: "/Images/section3user2.svg",
     },
     {
       name: "Tech Wizards",
       website: "techwizards.com",
       user: "Ralph Edwards",
-      avatar: "/images/section3user3.svg",
+      avatar: "/Images/section3user3.svg",
     },
     {
       name: "Tech Wizards",
       website: "techwizards.com",
       user: "Brooklyn Simmons",
-      avatar: "/images/section3user4.svg",
+      avatar: "/Images/section3user4.svg",
     },
     {
       name: "Tech Wizards",
       website: "techwizards.com",
       user: "Floyd Miles",
-      avatar: "/images/section3user5.svg",
+      avatar: "/Images/section3user5.svg",
     },
     {
       name: "Tech Wizards",
       website: "techwizards.com",
       user: "Savannah Nguyen",
-      avatar: "/images/section3user6.svg",
+      avatar: "/Images/section3user6.svg",
     },
   ];
 

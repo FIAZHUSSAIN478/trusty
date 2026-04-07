@@ -310,7 +310,7 @@ export default function Section2() {
               <div className="absolute left-[18px] top-[70px] hidden md:block">
                 <div className="absolute left-[18px] top-[70px] hidden md:block z-[999]">
                   <Image
-                    src="/images/section2img.svg"
+                    src="/Images/section2img.svg"
                     alt="decor"
                     width={42}
                     height={46}
@@ -320,7 +320,7 @@ export default function Section2() {
               </div>
               <div className="absolute left-[300px] top-[4px] hidden md:block">
                 <Image
-                  src="/images/section2card.svg"
+                  src="/Images/section2card.svg"
                   alt="Section 2 Card"
                   width={160}
                   height={120}
@@ -349,7 +349,7 @@ export default function Section2() {
               <div className="absolute bottom-[-4px] right-[42px] h-[108px] w-[108px] rounded-full bg-[#0F7A56] " />
 
               <img
-                src="/images/section2person.svg"
+                src="/Images/section2person.svg"
                 alt="person"
                 className="absolute bottom-[-50] right-[16px] z-10 h-[186px] w-auto object-contain"
               />

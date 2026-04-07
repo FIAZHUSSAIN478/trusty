@@ -20,7 +20,7 @@ export default function Section5() {
 
         <div className="relative w-19">
           <Image
-            src="/images/section5img.svg"
+            src="/Images/section5img.svg"
             alt="hero"
             width={110}
             height={60}
