@@ -30,6 +30,7 @@ export default function AboutSection2() {
                 fill
                 className="object-cover"
                 sizes="290px"
+                unoptimized={true}
               />
             </div>
           ))}
@@ -66,6 +67,7 @@ export default function AboutSection2() {
                   width={440}
                   height={380}
                   className="h-auto max-h-[380px] w-auto object-contain"
+                  unoptimized={true}
                 />
               </div>
 

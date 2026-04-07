@@ -26,6 +26,7 @@ export default function AboutSection3() {
                   width={40}
                   height={40}
                   className="object-cover"
+                  unoptimized={true}
                 />
               </div>
 
@@ -66,6 +67,7 @@ export default function AboutSection3() {
                   width={40}
                   height={40}
                   className="object-cover"
+                  unoptimized={true}
                 />
               </div>
 

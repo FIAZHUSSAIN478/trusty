@@ -47,6 +47,7 @@ export default function Footer() {
                   width={168}
                   height={51}
                   className="h-auto w-[168px] md:w-[140px] lg:w-[168px]"
+                  unoptimized={true}
                 />
               </div>
             </div>

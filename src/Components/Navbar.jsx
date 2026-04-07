@@ -26,6 +26,7 @@ export default function Navbar() {
           width={168}
           height={51}
           className="w-[168px] h-auto md:w-[140px] lg:w-[168px]"
+          unoptimized={true}
         />
 
         <div className="flex items-center gap-6 ">

@@ -43,6 +43,7 @@ export default function AboutSection() {
               height={640}
               priority
               className="h-auto w-full object-cover"
+              unoptimized={true}
             />
           </div>
         </div>
@@ -67,6 +68,7 @@ export default function AboutSection() {
                     width={42}
                     height={42}
                     className="h-full w-full object-cover"
+                    unoptimized={true}
                   />
                 </div>
               </div>
@@ -79,6 +81,7 @@ export default function AboutSection() {
                     width={42}
                     height={42}
                     className="h-full w-full object-cover"
+                    unoptimized={true}
                   />
                 </div>
               </div>
@@ -91,6 +94,7 @@ export default function AboutSection() {
                     width={42}
                     height={42}
                     className="h-full w-full object-cover"
+                    unoptimized={true}
                   />
                 </div>
               </div>
@@ -103,6 +107,7 @@ export default function AboutSection() {
                     width={42}
                     height={42}
                     className="h-full w-full object-cover"
+                    unoptimized={true}
                   />
                 </div>
               </div>
@@ -115,6 +120,7 @@ export default function AboutSection() {
                     width={42}
                     height={42}
                     className="h-full w-full object-cover"
+                    unoptimized={true}
                   />
                 </div>
               </div>
