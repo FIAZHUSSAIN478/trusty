@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import { useState } from "react";
-
+import Image from "next/image";
 export default function Navbar() {
   const [active, setActive] = useState("business");
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
     { name: "Write a review", href: "Review" },
-    { name: "How it Works", href: "#" },
+    { name: "How it Works", href: "/" },
     { name: "About Us", href: "About" },
     { name: "Blog", href: "/" },
     { name: "Login", href: "/" },
@@ -19,8 +19,8 @@ export default function Navbar() {
     <div className="h-[105px] border-b border-[#17253F26] bg-[url('/Images/Hero-bg.svg')] bg-cover bg-start ">
       <div className="max-w-7xl lg:px-30  mx-auto flex items-center justify-between h-full">
 
-        <img
-          src="/Images/Logo1.svg"
+        <Image
+          src="/Images/logoimg.svg"
           alt="trusty logo"
           width={168}
           height={51}

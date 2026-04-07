@@ -1,3 +1,4 @@
+import Image from "next/image";
 const aboutImages = {
   founder: "/Images/about1.svg",
   orbit1: "/Images/aboutorbit1.svg",

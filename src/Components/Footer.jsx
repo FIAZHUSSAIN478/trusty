@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Footer() {
   const quickLinks = [
     'About Us',
@@ -39,8 +40,8 @@ export default function Footer() {
              
 
               <div className="leading-none">
-                <img
-                  src="/Images/Logo1.svg"
+                <Image
+                  src="/Images/logoimg.svg"
                   alt="trusty logo"
                   width={168}
                   height={51}
