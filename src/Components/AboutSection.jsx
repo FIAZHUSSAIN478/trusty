@@ -1,6 +1,6 @@
 import Image from "next/image";
 const aboutImages = {
-  founder: "/Images/about1.svg",
+  founder: "/Images/about11.svg",
   orbit1: "/Images/aboutorbit1.svg",
   orbit2: "/Images/aboutorbit2.svg",
   orbit3: "/Images/aboutorbit3.svg",
