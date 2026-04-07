@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="max-w-7xl lg:px-30  mx-auto flex items-center justify-between h-full">
 
         <Image
-          src="/Images/logo1.svg"
+          src="/Images/Logo1.svg"
           alt="trusty logo"
           width={168}
           height={51}
