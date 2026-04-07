@@ -4,19 +4,19 @@ export default function BolgSection1() {
     const sideBlogs = [
         {
             id: 1,
-            image: "/images/blogimg2.svg",
+            image: "/Images/blogimg2.svg",
             title: "Romance scams: Spot the signs",
             desc: "The prevalence of influencers in our",
         },
         {
             id: 2,
-            image: "/images/blogimg3.svg",
+            image: "/Images/blogimg3.svg",
             title: "Holiday hoaxes: How scammers take advantage of the holiday.",
             desc: "The prevalence of influencers in our",
         },
         {
             id: 3,
-            image: "/images/blogimg4.svg",
+            image: "/Images/blogimg4.svg",
             title: "Gift card scams: What to look out for and how to avoid them",
             desc: "The prevalence of influencers in our",
         },
@@ -71,13 +71,13 @@ export default function BolgSection1() {
                         </button>
                     </div>
 
-                    {/* Cards */}
+
                     <div className="  grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-6.25 items-stretch">
-                        {/* Left Big Card */}
+
                         <div className="bg-[#EFF3F7] rounded-[24px] p-[12px] sm:p-[14px] lg:p-[15px] ">
                             <div className="relative w-full aspect-[556/290] rounded-[16px] overflow-hidden">
                                 <Image
-                                    src="/images/blogimg1.svg"
+                                    src="/Images/blogimg1.svg"
                                     alt="Main blog"
                                     fill
                                     className="object-cover"
@@ -104,7 +104,6 @@ export default function BolgSection1() {
                             </div>
                         </div>
 
-                        {/* Right Side Cards */}
                         <div className="flex flex-col gap-4 sm:gap-8.5">
                             {sideBlogs.map((item) => (
                                 <div
