@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 export default function Footer() {
   const quickLinks = [
     'About Us',
@@ -41,13 +39,12 @@ export default function Footer() {
              
 
               <div className="leading-none">
-                <Image
+                <img
                   src="/Images/logo1.svg"
                   alt="trusty logo"
                   width={168}
                   height={51}
                   className="h-auto w-[168px] md:w-[140px] lg:w-[168px]"
-                  unoptimized={true}
                 />
               </div>
             </div>

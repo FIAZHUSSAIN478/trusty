@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import Image from "next/image";
 
 export default function Navbar() {
   const [active, setActive] = useState("business");
@@ -20,13 +19,12 @@ export default function Navbar() {
     <div className="h-[105px] border-b border-[#17253F26] bg-[url('/Images/Hero-bg.svg')] bg-cover bg-start ">
       <div className="max-w-7xl lg:px-30  mx-auto flex items-center justify-between h-full">
 
-        <Image
+        <img
           src="/Images/logo1.svg"
           alt="trusty logo"
           width={168}
           height={51}
           className="w-[168px] h-auto md:w-[140px] lg:w-[168px]"
-          unoptimized={true}
         />
 
         <div className="flex items-center gap-6 ">

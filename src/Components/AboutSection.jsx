@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const aboutImages = {
   founder: "/Images/about1.svg",
   orbit1: "/Images/aboutorbit1.svg",
@@ -36,14 +34,12 @@ export default function AboutSection() {
           </div>
 
           <div className="mx-auto mt-6 max-w-232.5 overflow-hidden rounded-[18px]">
-            <Image
+            <img
               src={aboutImages.founder}
               alt="Founder"
               width={1200}
               height={640}
-              priority
               className="h-auto w-full object-cover"
-              unoptimized={true}
             />
           </div>
         </div>
