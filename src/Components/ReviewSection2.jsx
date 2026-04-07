@@ -2,10 +2,9 @@ import { Camera, ArrowRight } from "lucide-react";
 
 export default function ReviewSection2() {
   return (
-    <section className="w-full bg-[#f3f4f6] py-10 md:py-16">
-      <div className="mx-auto max-w-6xl px-4">
+    <section className="w-full bg-white py-10 md:py-16">
+      <div className="mx-auto max-w-[67rem] px-4">
         <div className="grid overflow-hidden rounded-[24px] bg-[#eef2f5] md:grid-cols-2">
-          {/* Left Side */}
           <div className="relative min-h-[580px] overflow-hidden bg-[#005636] px-8 py-10 text-white md:px-10">
             <p className="mb-4 text-center text-sm text-white/90">
               Can&apos;t Wait to Read Your Thoughts!
@@ -15,7 +14,7 @@ export default function ReviewSection2() {
               Select a Company &amp; Contribute Your Feedback Today!
             </h2>
 
-            <div className="absolute left-6 top-[165px] w-[126px] rounded-[18px] bg-white p-3 text-[#1f2937] shadow-lg">
+            {/* <div className="absolute left-6 top-[165px] w-[126px] rounded-[18px] bg-white p-3 text-[#1f2937] shadow-lg">
               <div className="mb-2 flex items-start gap-2">
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#ff9f2f] text-xs font-bold text-black">
                   😊
@@ -39,10 +38,10 @@ export default function ReviewSection2() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             <div className="absolute left-12 top-[275px] text-white/90">
-              <svg
+              {/* <svg
                 width="88"
                 height="88"
                 viewBox="0 0 88 88"
@@ -62,21 +61,21 @@ export default function ReviewSection2() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
-              </svg>
+              </svg> */}
             </div>
 
-            <div className="absolute right-6 top-[285px] rounded-full bg-[#18e0a0] px-3 py-2 text-[10px] font-semibold text-[#083b2d] shadow">
+            {/* <div className="absolute right-6 border top-[285px] rounded-full bg-[#18e0a0] px-3 py-2 text-[10px] font-semibold text-[#083b2d] shadow">
               <p className="mb-1 leading-none">It was Delicious!</p>
-              <div className="flex gap-[2px] rounded bg-[#17335c] px-1.5 py-1 text-[9px] text-white">
+              <div className="flex gap-[2px] rounded  px-1.5 py-1 text-[9px] text-white">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <span key={i}>★</span>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             <div className="absolute bottom-0 left-1/2 w-[280px] -translate-x-1/2 md:w-[300px]">
               <img
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80"
+                src="images/section2person.svg"
                 alt="Man using phone"
                 className="h-auto w-full object-contain"
               />

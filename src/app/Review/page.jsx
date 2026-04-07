@@ -6,7 +6,7 @@ export default function Reviewpage() {
   return (
     <div>
       <ReviewSection1/>
-      <ReviewSection2/>
+      {/* <ReviewSection2/> */}
     </div>
   )
 }

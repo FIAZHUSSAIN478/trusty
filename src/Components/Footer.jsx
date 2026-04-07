@@ -32,8 +32,8 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="w-full bg-white px-0 py-4 md:py-0">
-      <div className="mx-auto max-w-[1200] rounded-[25px] bg-[#9BDFC4] px-7 py-10 md:px-10 md:py-9 lg:px-14">
+    <footer className="w-full bg-white lg:px-0 md:px-8 px-7 py-4 md:py-0">
+      <div className="mx-auto max-w-[1200] rounded-[25px]  bg-[#9BDFC4] px-7 py-10 md:px-10 md:py-9 lg:px-14">
         <div className="grid grid-cols-1 gap-y-8 md:grid-cols-2 lg:grid-cols-[1.2fr_0.9fr_0.9fr_0.9fr_0.9fr] lg:gap-x-10">
           <div>
             <div className="flex items-center gap-3">

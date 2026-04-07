@@ -40,7 +40,7 @@ function IconArrowRight({ className = "" }) {
 
 const faqItems = [
   {
-    q: "What types of loans do you offer?",
+    q: "What types of loans do you offering us?",
     a: "We offer a variety of loans, including personal loans, business loans, foreigner loans, payday loans, and debt consolidation loans, tailored to meet your specific needs.",
   },
   {
@@ -71,11 +71,11 @@ export default function AboutSection4() {
   return (
     <section className="w-full px-6 py-16 md:px-35 md:py-20">
       <div className="mx-auto w-full max-w-6xl">
-        <h2 className="text-center text-2xl font-bold text-[#1a202c] sm:text-[1.65rem]">
+        <h2 className="font-poppins font-semibold lg:text-[38px] md:text-[38px] leading-tight tracking-normal text-center text-[rgba(23,37,63,1)] sm:text-[1.65rem]">
           Frequently Asked Questions
         </h2>
 
-        <p className="mx-auto mt-4 max-w-xl text-center text-[15px] text-[#4a5568]">
+        <p className="mx-auto font-'Open_Sans' font-normal not-italic text-base leading-[1.6] tracking-normal [leading-trim:cap-height] mt-4 max-w-xl text-center text-[15px] text-[rgba(23,37,63,1)]">
           Here are some common questions about our Reviews and their answers.
         </p>
 
@@ -91,7 +91,7 @@ export default function AboutSection4() {
                   onClick={() => setOpenFaq(open ? -1 : index)}
                   aria-expanded={open}
                 >
-                  <span className="flex-1 text-[15px] font-bold text-[#1a202c]">
+                  <span className="flex-1 font-'Open_Sans' font-bold lg:text-[22px] md:text-[22px] text-4 leading-[120%] tracking-normal  text-[rgba(23,37,63,1)]">
                     {item.q}
                   </span>
 
@@ -111,7 +111,7 @@ export default function AboutSection4() {
                 </button>
 
                 {open && (
-                  <p className="mt-3 pr-14 text-[15px] leading-relaxed text-[#4a5568]">
+                  <p className="mt-3 pr-14 font-'Open_Sans' font-normal lg:text-[16px] md:text-[16px] text-3 leading-[160%] tracking-normal [leading-trim:cap_height] text-[rgba(23,37,63,1)]">
                     {item.a}
                   </p>
                 )}

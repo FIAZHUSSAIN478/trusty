@@ -11,13 +11,13 @@ export default function Navbar() {
     { name: "Write a review", href: "Review" },
     { name: "How it Works", href: "/" },
     { name: "About Us", href: "About" },
-    { name: "Blog", href: "/" },
+    { name: "Blog", href: "Blogs" },
     { name: "Login", href: "/" },
   ];
 
   return (
     <div className="h-[105px] border-b border-[#17253F26] bg-[url('/Images/Hero-bg.svg')] bg-cover bg-start ">
-      <div className="max-w-7xl lg:px-30  mx-auto flex items-center justify-between h-full">
+      <div className="max-w-7xl lg:px-30 md:px-5 px-7  mx-auto flex items-center justify-between h-full">
 
         <Image
           src="/Images/logoimg.svg"
