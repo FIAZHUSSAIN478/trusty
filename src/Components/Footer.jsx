@@ -40,7 +40,7 @@ export default function Footer() {
 
               <div className="leading-none">
                 <img
-                  src="/Images/logo1.svg"
+                  src="/Images/Logo1.svg"
                   alt="trusty logo"
                   width={168}
                   height={51}
