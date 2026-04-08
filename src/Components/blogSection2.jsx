@@ -95,7 +95,7 @@ export default function BlogSection2() {
           {blogCards.map((card) => (
             <div
               key={card.id}
-              className="blog-card shrink-0 snap-start w-[320px] sm:w-[380px] md:w-[420px] lg:w-[450px] border border-[#C3C8D0] rounded-[25px] bg-[#E9ECEF] p-4 sm:p-5"
+              className="blog-card shrink-0 snap-start w-[320px] border border-[#C3C8D0] rounded-[25px] bg-[#E9ECEF] p-4 sm:p-5"
             >
               {/* Image */}
               <div className="relative w-full h-[220px] sm:h-[240px] md:h-[260px] lg:h-[200px] rounded-[20px] overflow-hidden">
@@ -115,7 +115,7 @@ export default function BlogSection2() {
                   </p>
                 </div>
 
-                <div className="h-[33px] w-[142px] px-3 rounded-full border border-[#C3C8D0] bg-[#F7F7F7] flex items-center gap-2">
+                <div className="h-[33px] w-[132px] px-3 rounded-full border border-[#C3C8D0] bg-[#F7F7F7] flex items-center gap-2">
                   <p className="text-[#252525] text-[14px]">
                     {card.date}
                   </p>
