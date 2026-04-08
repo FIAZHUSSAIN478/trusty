@@ -83,7 +83,7 @@ export default function BlogSection3() {
         </h1>
 
         <div className="mt-3 flex items-center justify-center gap-2 text-[12px] text-gray-500">
-          <Image src="/images/blogimg17.svg"
+          <Image src="/Images/blogimg17.svg"
             height={32}
             width={32}
             alt="men" />
@@ -96,7 +96,7 @@ export default function BlogSection3() {
 
         <div className="mt-8 overflow-hidden rounded-md">
           <Image
-            src="/images/blogimg2.svg"
+            src="/Images/blogimg2.svg"
             alt="Romance scams hero"
             width={300}
             height={150}
@@ -135,7 +135,7 @@ export default function BlogSection3() {
 
         <div className="mt-8 overflow-hidden rounded-md">
           <Image
-            src="/images/blogimg6.svg"
+            src="/Images/blogimg6.svg"
             alt="Trust feedback"
             width={300}
             height={150}
