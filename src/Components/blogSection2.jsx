@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 const blogCards = [
   {
@@ -41,26 +41,42 @@ const blogCards = [
 export default function BlogSection2() {
   const scrollRef = useRef(null);
   const [activeDot, setActiveDot] = useState(0);
+  const [cardWidth, setCardWidth] = useState(0);
 
-  // card width + gap (important)
-  const CARD_WIDTH = 377 + 24; // width + gap-6
+  useEffect(() => {
+    const updateCardWidth = () => {
+      if (scrollRef.current) {
+        const container = scrollRef.current;
+        const firstCard = container.querySelector('.blog-card');
+        if (firstCard) {
+          const width = firstCard.offsetWidth;
+          const style = window.getComputedStyle(container);
+          const gap = parseFloat(style.gap) || 0;
+          setCardWidth(width + gap);
+        }
+      }
+    };
+
+    updateCardWidth();
+    window.addEventListener('resize', updateCardWidth);
+    return () => window.removeEventListener('resize', updateCardWidth);
+  }, []);
 
   const handleScroll = () => {
     const container = scrollRef.current;
-    if (!container) return;
+    if (!container || cardWidth === 0) return;
 
     const scrollLeft = container.scrollLeft;
-
-    const currentIndex = Math.round(scrollLeft / CARD_WIDTH);
+    const currentIndex = Math.round(scrollLeft / cardWidth);
     setActiveDot(currentIndex);
   };
 
   const scrollToDot = (index) => {
     const container = scrollRef.current;
-    if (!container) return;
+    if (!container || cardWidth === 0) return;
 
     container.scrollTo({
-      left: index * CARD_WIDTH,
+      left: index * cardWidth,
       behavior: "smooth",
     });
   };
@@ -79,7 +95,7 @@ export default function BlogSection2() {
           {blogCards.map((card) => (
             <div
               key={card.id}
-              className="shrink-0 snap-start w-[320px] sm:w-[380px] md:w-[420px] lg:w-[450px] border border-[#C3C8D0] rounded-[25px] bg-[#E9ECEF] p-4 sm:p-5"
+              className="blog-card shrink-0 snap-start w-[320px] sm:w-[380px] md:w-[420px] lg:w-[450px] border border-[#C3C8D0] rounded-[25px] bg-[#E9ECEF] p-4 sm:p-5"
             >
               {/* Image */}
               <div className="relative w-full h-[220px] sm:h-[240px] md:h-[260px] lg:h-[200px] rounded-[20px] overflow-hidden">
