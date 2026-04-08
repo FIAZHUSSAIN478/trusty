@@ -22,7 +22,7 @@ const blogCards = [
   },
   {
     id: 3,
-    image: "/images/blogimg8.svg",
+    image: "/Images/blogimg8.svg",
     category: "Review Matters",
     date: "July 30, 2024",
     title: "The FTC’s fake reviews ruling and what it means for you",

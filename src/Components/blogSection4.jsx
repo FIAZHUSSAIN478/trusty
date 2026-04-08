@@ -116,7 +116,7 @@ export default function BlogSection4() {
               className={`w-10 h-10 flex items-center justify-center rounded-full text-white transition-colors duration-300 cursor-pointer 
               `}
             >
-              <Image src="/images/blogimg13.svg"
+              <Image src="/Images/blogimg13.svg"
               height={40}
               width={40}
               alt="Previous" />
@@ -126,7 +126,7 @@ export default function BlogSection4() {
               onClick={handleNext}
               className={`w-10 h-10 flex items-center justify-center rounded-full text-white transition-colors duration-300 cursor-pointer `}
             >
-              <Image src="/images/blogimg14.svg"
+              <Image src="/Images/blogimg14.svg"
               height={40}
               width={40}
               alt="Previous"/>
