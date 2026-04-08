@@ -111,7 +111,7 @@ export default function BlogSection5() {
             <div
               key={card.id}
               data-card
-              className="shrink-0 snap-start w-[320px] sm:w-[380px] md:w-[420px] lg:w-[450px]  border border-[#C3C8D0] rounded-[25px] bg-white p-4 sm:p-5"
+              className="blog-card shrink-0 snap-start w-[320px]  border border-[#C3C8D0] rounded-[25px] bg-white p-4 sm:p-5"
             >
               <div className="relative w-full h-[220px] sm:h-[240px] md:h-[260px] lg:h-[200px] rounded-[20px] overflow-hidden">
                 <Image
@@ -123,13 +123,13 @@ export default function BlogSection5() {
               </div>
 
               <div className="flex flex-wrap items-center gap-3 mt-5">
-                <div className="w-[142px] h-[43px] px-2 py-2 gap-[6px] rounded-full border border-[#C3C8D0] bg-[#FFFFFF] flex items-center justify-center">
+                <div className="w-[132px] h-[33px] px-2 py-2 gap-[6px] rounded-full border border-[#C3C8D0] bg-[#FFFFFF] flex items-center justify-center">
                   <p className="text-[#252525] text-[14px] leading-[100%] font-normal">
                     {card.category}
                   </p>
                 </div>
 
-             <div className="w-[142px] h-[33px]  rounded-full px-2 py-2 border border-[#C3C8D0] bg-[#FFFFFF] flex items-center justify-center gap-[6px]">
+             <div className="w-[132px] h-[33px]  rounded-full px-2 py-2 border border-[#C3C8D0] bg-[#FFFFFF] flex items-center justify-center gap-[6px]">
   
 
   <p className="text-[#252525] text-[14px] leading-[100%] font-normal">
