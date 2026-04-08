@@ -199,7 +199,7 @@ export default function Section2() {
   return (
     <section className="w-full bg-white px-4 lg:px-8 py-3">
       <div className="w-full rounded-[16px]  bg-[#E7F4EF] px-10 lg:px-20 pb-5 pt-12">
-        {/* Top row */}
+        
         <div className="mb-8">
           <div className="mb-5 flex items-center justify-between">
             <h2 className="text-[18px] font-semibold leading-none text-[#1D2B4F] md:text-[20px]">
@@ -286,7 +286,7 @@ export default function Section2() {
         </div>
 
 
-        <div className="relative overflow-hidden rounded-[14px] bg-[#005C3D] px-10 top-30">
+        <div className="relative  overflow-hidden rounded-[14px] bg-[#005C3D] px-10 top-30">
           <div className="relative z-10 flex min-h-[188px] flex-col justify-between px-10 py-6 md:flex-row md:items-center md:px-7 ">
             <div className="max-w-[255px] pt-1">
               <h3 className="mb-3 text-[18px] font-semibold leading-[1.25] text-white md:text-[22px] ">

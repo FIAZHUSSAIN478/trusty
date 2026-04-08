@@ -61,7 +61,7 @@ export default function Navbar() {
 
           </div>
           {
-            <button className="lg:hidden flex flex-col gap-1"
+            <button className="lg:hidden flex flex-col  gap-1"
 
               onClick={() => setMenuOpen(!menuOpen)}>
               <span className="w-6 h-[2px] bg-[#17253F]"></span>
@@ -75,7 +75,7 @@ export default function Navbar() {
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden flex mx-auto border border-[#17253F26] rounded-full p-[6px] mt-4 mx-10 max-w-[267px] ">
+        <div className="md:hidden  flex mx-auto  border-[#17253F26] rounded-full p-[6px] mt-4 mx-10 max-w-[267px] ">
           <button
             onClick={() => setActive("business")}
             className={`py-[10px] px-[15px] flex items-center justify-center rounded-[100px] text-sm font-medium transition ${active === "business" ? "bg-[#17253F] text-white" : "text-[#17253F]"
@@ -94,9 +94,9 @@ export default function Navbar() {
         </div>
       )}
       {menuOpen && (
-        <div className="lg:hidden bg-[url('/Images/Hero-bg.svg')] bg-cover bg-start   ">
+        <div className="lg:hidden bg-[url('/Images/Hero-bg.svg')] bg-cover bg-star  ">
           {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="text-[#17253F] font-medium border-b border-[#17253F26] w-full flex flex-col justify-center items-center md:items-start p-2 px-4 w-full gap-4">
+            <Link key={item.name} href={item.href} className="text-[#17253F]  font-medium border-b border-[#17253F26] w-full  flex flex-col justify-center items-center md:items-start p-2 px-4 w-full gap-4">
               {item.name}
             </Link>
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function BolgSection1() {
     const sideBlogs = [
         {
@@ -20,11 +20,12 @@ export default function BolgSection1() {
             title: "Gift card scams: What to look out for and how to avoid them",
             desc: "The prevalence of influencers in our",
         },
+        
     ];
 
     return (
         <div className=" bg-[url('/images/Hero-bg.svg')] bg-cover lg:px-20 bg-start">
-            <div className="max-w-7xl px-10 mx-auto h-full">
+            <div className="max-w-6xl px-10 mx-auto h-full">
                 <div className="pt-[50px] sm:pt-[60px] lg:pt-[72px] pb-[55px] sm:pb-[70px] lg:pb-[90px]">
 
                     <div className="text-center mb-[40px] sm:mb-[52px] lg:mb-[68px]">
@@ -128,9 +129,11 @@ export default function BolgSection1() {
                                             {item.desc}
                                         </p>
 
-                                        <button className="text-[#17253F] mb-5 md:mb-0 font-semibold text-[16px] leading-[1.2] flex items-center gap-2">
+                                        <Link href="/SingleBlog">
+                                        <button className="text-[#17253F]  mb-5 md:mb-0 font-semibold text-[16px] leading-[1.2] flex items-center gap-2 cursor-pointer">
                                             Read Article <span>→</span>
-                                        </button>
+                                        </button> 
+                                        </Link>
                                     </div>
                                 </div>
                             ))}
