@@ -156,11 +156,11 @@ export default function BlogSection3() {
             Our mission is to make your day better. We get it. We like to escape the rush out of every day and we want to help you make your best life too. Whether you&apos;re writing hand or working out, a night out or an extra bath to keep it lively. Best fitness when you don&apos;t need while we are stretching. We want you to give yourself a boost to your friends, family and mindfulness.
           </p>
         </section>
-        <section className="mt-8 bg-[rgba(231,244,239,1)] rounded-3xl h-100 px-10 py-10">
-          <h2 className="mb-4 mt-6 text-[18px] font-extrabold text-[rgba(23,37,63,1)]">
+        <section className="mt-8   bg-[rgba(231,244,239,1)] rounded-3xl h-100 px-10 py-10">
+          <h2 className="mb-4 mt-18 text-[18px] font-extrabold text-[rgba(23,37,63,1)]">
             Conclusion
           </h2>
-          <p className="text-black font-'Basier_Circle' font-normal text-[17px] leading-[29px] tracking-[0%] mb-8">
+          <p className="text-black font-'Basier_Circle' font-normal text-[17px] leading-[29px] tracking-[0%]">
             Our mission is to make your day better. We get it. We like to escape the rush out of every day and we want to help you do your best life too. Whether you're working hand or working out, a night out or an extra bath, making the world less stressful. Best mood because you need while we are stretching. We want you to give yourself a boost to your friends, family and mindfulness.
           </p>
         </section>
@@ -175,7 +175,7 @@ export default function BlogSection3() {
                 {!form.comment && (
                   <label
                     htmlFor="comment"
-                    className="pointer-events-none absolute left-5 top-4 text-[14px] text-[#A3A3A3]"
+                    className="pointer-events-none absolute left-5 py-4 top-4 text-[14px] text-[#A3A3A3]"
                   >
                     Comment<span className="text-red-500">*</span>
                   </label>
