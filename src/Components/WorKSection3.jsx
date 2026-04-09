@@ -22,7 +22,7 @@ export default function WorkSection3() {
           </div>
           <div className="overflow-hidden  rounded-lg">
             <Image
-              src="/images/workcard4.svg"
+              src="/Images/workcard4.svg"
               alt="Woman speaking into a microphone with headphones"
               width={400}
               height={500}

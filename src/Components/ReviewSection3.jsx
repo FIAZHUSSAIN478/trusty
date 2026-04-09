@@ -65,7 +65,7 @@ export default function ReviewSection3() {
                                     {Array.from({ length: 5 }).map((_, i) => (
                                         <Image
                                             key={i}
-                                            src="/images/ReviewCard6.svg"
+                                            src="/Images/ReviewCard6.svg"
                                             alt="star"
                                             height={28}
                                             width={28}

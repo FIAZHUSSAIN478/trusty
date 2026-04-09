@@ -61,7 +61,7 @@ export default function WorkSection1() {
         </div>
         <div className="mx-auto mt-10 max-w-[50rem] overflow-hidden rounded-[14px]">
           <Image
-            src="/images/workimg1.svg"
+            src="/Images/workimg1.svg"
             alt="People working together"
             width={900}
             height={520}

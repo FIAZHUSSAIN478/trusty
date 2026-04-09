@@ -31,7 +31,7 @@ export default function ReviewSection2() {
             </div>
           </div>
 
-          {/* Right Side */}
+        
           <div className="bg-[#eef2f5] px-5 py-7 md:px-8 md:py-8">
             <form className="space-y-5">
               <div>
