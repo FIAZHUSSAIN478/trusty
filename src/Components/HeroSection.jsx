@@ -75,7 +75,7 @@ export default function HeroSection() {
 
   return (
     <section className="w-full bg-white">
-      <div className="max-w-[67rem] border mx-auto">
+      <div className="max-w-[1440px] mx-auto">
         <div className="relative overflow-hidden bg-gradient-to-b from-[#EEF8F4] via-[#F3F8F5] to-[#F8F8F8] px-4 sm:px-6 md:px-10 lg:px-16 pt-8 md:pt-10 lg:pt-12 pb-16 lg:pb-0">
           <div className="absolute left-[-80px] top-[120px] w-[280px] h-[280px] bg-[#DDF3EA] rounded-full blur-3xl opacity-70" />
           <div className="absolute right-[-60px] top-[60px] w-[260px] h-[260px] bg-[#EAF7F1] rounded-full blur-3xl opacity-80" />
