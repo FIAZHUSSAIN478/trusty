@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import {
   Search,
@@ -20,9 +21,8 @@ const categories = [
 function ReviewCard({ image, align = "left" }) {
   return (
     <div
-      className={`absolute hidden lg:block ${
-        align === "left" ? "left-[22px] top-[34px]" : "right-[20px] top-[192px]"
-      }`}
+      className={`absolute hidden lg:block ${align === "left" ? "left-[22px] top-[34px]" : "right-[20px] top-[192px]"
+        }`}
     >
       <img
         src={image}
@@ -75,7 +75,7 @@ export default function HeroSection() {
 
   return (
     <section className="w-full bg-white">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-[67rem] border mx-auto">
         <div className="relative overflow-hidden bg-gradient-to-b from-[#EEF8F4] via-[#F3F8F5] to-[#F8F8F8] px-4 sm:px-6 md:px-10 lg:px-16 pt-8 md:pt-10 lg:pt-12 pb-16 lg:pb-0">
           <div className="absolute left-[-80px] top-[120px] w-[280px] h-[280px] bg-[#DDF3EA] rounded-full blur-3xl opacity-70" />
           <div className="absolute right-[-60px] top-[60px] w-[260px] h-[260px] bg-[#EAF7F1] rounded-full blur-3xl opacity-80" />
@@ -111,14 +111,13 @@ export default function HeroSection() {
                   <Grid2x2 className="w-4 h-4" />
                   <span className="hidden sm:inline">Categories</span>
                   <ChevronDown
-                    className={`w-4 h-4  text-[#98A2B3]  transition-transform duration-200 ${
-                      isDropdownOpen ? "rotate-180" : ""
-                    }`}
+                    className={`w-4 h-4  text-[#98A2B3]  transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
 
                 {isDropdownOpen && (
-                  <div className="absolute left-0  top-[calc(100%+10px)] w-[220px] bg-white border border-none  rounded-[18px] shadow-[0_12px_32px_rgba(16,24,40,0.10)] z-30 p-2">
+                  <div className="absolute left-0  top-[calc(100%+10px)] w-[220px] bg-white  rounded-[18px] shadow-[0_12px_32px_rgba(16,24,40,0.10)]  p-2">
                     {categories.map((item, i) => (
                       <button
                         key={i}
@@ -150,16 +149,18 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="relative z-10 max-w-[1180px] mx-auto mt-16 sm:mt-20 md:mt-24 lg:mt-20 lg:ml-10">
+          <div className="relative  max-w-[1180px] mx-auto mt-16 sm:mt-20 md:mt-24 lg:mt-20 lg:ml-10">
             <div className="flex items-center justify-between gap-4 mb-7">
               <h2 className="text-[#17253F] font-extrabold tracking-[-0.02em] leading-none font-poppins font-semibold text-[22px] sm:text-[28px] md:text-[32px] lg:text-[38px] leading-[28px] sm:leading-[32px] md:leading-[36px] lg:leading-[38px]">
                 What you are looking for?
               </h2>
 
-              <button className="hidden sm:flex items-center gap-2 border border-[#12D18E] text-[#1D2B4F] rounded-full px-4 md:px-5 h-[36px] md:h-[40px] text-[12px] md:text-[14px] font-medium bg-white/70">
-                <span>See More</span>
-                <ChevronRight className="w-4 h-4" />
-              </button>
+              <Link href="/CatagoryDetails">
+                <button className="hidden sm:flex items-center gap-2 border border-[#12D18E] text-[#1D2B4F] rounded-full px-4 md:px-5 h-[36px] md:h-[40px] text-[12px] md:text-[14px] font-medium bg-white/70">
+                  <span>See More</span>
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </Link>
             </div>
 
             <div className="overflow-hidden pb-3">

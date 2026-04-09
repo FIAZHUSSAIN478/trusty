@@ -1,5 +1,6 @@
 "use client";
-
+import Link from "next/link";
+// import { Link } from "lucide-react";
 import { useState } from "react";
 
 export default function Section1() {
@@ -115,12 +116,14 @@ export default function Section1() {
                       </span>
                     </div>
 
-                    <button className="group inline-flex items-center gap-1 text-[13px] sm:text-[14px] font-semibold text-[#1e2a47]">
+                    <Link href="/HomeDetails">
+                    <button className="group  inline-flex items-center gap-1 text-[13px] sm:text-[14px] font-semibold text-[#1e2a47]">
                       View Details
                       <span className="transition-transform group-hover:translate-x-1">
                         →
                       </span>
                     </button>
+                    </Link>
                   </div>
                 ))}
               </div>

@@ -27,14 +27,9 @@ export default function Section5() {
             className="absolute right-0 lg:top-[-100] lg:left-98 md:top-[-70] md:left-80 top-[-130] left-30"
           />
         </div>
-
-        {/* Wrapper (IMPORTANT for dropdown + rounded UI) */}
         <div className="relative mt-3 w-full max-w-[860px]">
-          
-          {/* Search Bar (same design as before) */}
           <div className="flex overflow-hidden rounded-full border border-[#E5E7EB] bg-white shadow-[0_8px_30px_rgba(0,0,0,0.04)]">
-            
-            {/* Categories Button */}
+
             <button
               onClick={() => setOpenDropdown(!openDropdown)}
               className="flex min-w-[180px] items-center gap-3 border-r border-[#E5E7EB] px-6 py-5 text-[16px] font-medium text-[#1F2A44] transition hover:bg-[#F8FAFC]"
@@ -54,7 +49,6 @@ export default function Section5() {
               </svg>
 
               <span>Categories</span>
-
               <svg
                 width="14"
                 height="14"
@@ -74,8 +68,6 @@ export default function Section5() {
                 />
               </svg>
             </button>
-
-            {/* Input */}
             <div className="flex flex-1 items-center">
               <input
                 type="text"
@@ -83,8 +75,6 @@ export default function Section5() {
                 className="h-full w-full px-6 text-[16px] text-[#1F2A44] placeholder:text-[#9CA3AF] focus:outline-none"
               />
             </div>
-
-            {/* Search Button (UNCHANGED DESIGN) */}
             <button className="flex h-[72px] w-[90px] items-center justify-center bg-[#12D98B] transition hover:bg-[#0FC57E]">
               <svg
                 width="28"
@@ -109,8 +99,6 @@ export default function Section5() {
               </svg>
             </button>
           </div>
-
-          {/* Dropdown (outside, so border-radius safe rahe) */}
           {openDropdown && (
             <div className="absolute left-0 top-[78px] z-20 w-[220px] rounded-[20px] border border-[#E5E7EB] bg-white p-2 text-left shadow-[0_12px_30px_rgba(0,0,0,0.08)]">
               <button className="block w-full rounded-[12px] px-4 py-3 text-[15px] text-[#1F2A44] hover:bg-[#F8FAFC]">

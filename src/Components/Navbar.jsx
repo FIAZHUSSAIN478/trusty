@@ -9,16 +9,17 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Write a review", href: "Review" },
-    { name: "How it Works", href: "/" },
+    { name: "How it Works", href: "WorkPage" },
     { name: "About Us", href: "About" },
     { name: "Blog", href: "Blogs" },
-    { name: "Login", href: "/" },
+    { name: "Login", href: "LogInPage" },
   ];
 
   return (
     <div className="h-[105px] border-b border-[#17253F26] bg-[url('/Images/Hero-bg.svg')] bg-cover bg-start ">
-      <div className="max-w-7xl lg:px-30 md:px-5 px-7  mx-auto flex items-center justify-between h-full">
+      <div className="max-w-7xl  lg:px-30 md:px-5 px-7  mx-auto flex items-center justify-between h-full">
 
+        <Link href="/">
         <Image
           src="/Images/logoimg.svg"
           alt="trusty logo"
@@ -26,8 +27,9 @@ export default function Navbar() {
           height={51}
           className="w-[168px] h-auto md:w-[140px] lg:w-[168px]"
         />
+        </Link>
 
-        <div className="flex items-center gap-6 ">
+        <div className="flex items-center  gap-6 ">
           <nav className="flex items-center gap-6 hidden  lg:flex text-[#17253F] font-normal text-[15px] leading-none tracking-normal font-poppins">
             {navItems.map((item) => (
               <Link key={item.name} className="hover:font-bold" href={item.href}>
@@ -41,7 +43,7 @@ export default function Navbar() {
             <button
               onClick={() => setActive("business")}
               className={`lg:py-[21px] lg:px-[25px] py-[10px] px-[15px] lg:w-[170px] lg:h-[53px] flex items-center justify-center rounded-[100px] text-sm font-medium transition ${active === "business"
-                  ? "bg-[#17253F] text-white"
+                  ? "bg-[#17253F]  text-white"
                   : "text-[#17253F]"
                 }`}
             >
@@ -61,7 +63,7 @@ export default function Navbar() {
 
           </div>
           {
-            <button className="lg:hidden flex flex-col  gap-1"
+            <button className="lg:hidden flex  flex-col  gap-1"
 
               onClick={() => setMenuOpen(!menuOpen)}>
               <span className="w-6 h-[2px] bg-[#17253F]"></span>
