@@ -32,11 +32,11 @@ export default function TopBankCard() {
           <span className="text-sm text-gray-400">(7891)</span>
         </div>
 
-        <div className="flex items-center gap-2 mt-4 cursor-pointer">
-          <span className="font-semibold text-[#17253F]">
+        <div className="flex items-center  gap-2 mt-4 cursor-pointer">
+          <span className="font-semibold  text-[#17253F]">
             View Details
           </span>
-          <Image src="/Images/Home333.svg" alt="arrow" height={1} width={11} className="h-4 w-4" />
+          <Image src="/Images/home333.svg" alt="arrow" height={1} width={11} className="h-4 w-4"/>
         </div>
       </div>
     </div>
