@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 export default function LoginSection1() {
     return (
         <div>
@@ -115,13 +114,10 @@ export default function LoginSection1() {
                                             className="w-full h-[64px] rounded-full border border-[#D6DDE5] bg-white px-[28px] text-[16px] text-[#1D2746] placeholder:text-[#A3ACB9] outline-none"
                                         />
                                     </div>
-
-                                    <Link href="/SignleReviewPage">
                                     <button className="w-full h-[70px] rounded-full bg-[#17253F] text-white text-[17px] font-semibold flex items-center justify-center gap-3">
                                         Continue with email
                                         <span className="text-[24px] leading-none">→</span>
                                     </button>
-                                    </Link>
                                 </div>
                             </div>
                         </div>

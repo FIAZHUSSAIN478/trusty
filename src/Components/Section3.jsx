@@ -48,13 +48,13 @@ export default function Section3() {
       key={index}
       className="w-[320px] shrink-0 rounded-[20px] border border-[#E5E7EB] bg-[#EFF3F7] px-4 py-4 shadow-none"
     >
-      <div className="mb-4 flex items-start gap-3">
-        <div className="relative h-[54px] w-[54px] rounded-[10px] border border-[#D1D5DB] bg-[#F8F8F8]">
+      <div className="mb-4  flex items-start gap-3">
+        <div className="relative  h-[54px] w-[54px] rounded-[10px] border border-[#D1D5DB] bg-[#F8F8F8]">
           <span className="absolute right-[-2px] top-[-2px] h-[10px] w-[10px] rounded-full border border-[#16A34A] bg-[#22C55E]"></span>
         </div>
 
         <div className="pt-[2px]">
-          <h3 className="text-[14px] font-semibold leading-none text-[#111827]">
+          <h3 className="text-[14px]  font-semibold leading-none text-[#111827]">
             {item.name}
           </h3>
           <p className="mt-[6px] text-[12px] leading-none text-[#8A8F98]">
@@ -124,14 +124,13 @@ export default function Section3() {
   );
 
   return (
-    <section className="w-full overflow-hidden bg-white px-6 py-16 md:px-10 lg:mt-30 md:mt-20">
+    <section className="w-full  overflow-hidden bg-white px-6 pb-16 md:px-10 ">
       <div className="w-full">
         <h2 className="mb-10 text-center text-[28px] font-semibold leading-[1.2] text-[#1F2A44] md:text-[38px]">
           Discover What People Like and Dislike
         </h2>
 
         <div className="space-y-6 overflow-hidden">
-          {/* Row 1 - Left to Right */}
           <div className="marquee">
             <div className="marquee-track">
               {[...firstRow, ...firstRow].map((item, index) => (

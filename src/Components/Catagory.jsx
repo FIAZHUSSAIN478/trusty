@@ -1,12 +1,14 @@
+import Image from "next/image";
+import Link from "next/link";
 export default function Catagory() {
   const categories = [
     {
       title: 'Beauty & Well-Being',
       theme: {
-        header: 'bg-[#79D6AF]',
+        header: 'bg-[#97e0c2]',
         iconWrap: 'bg-[#5CC497]',
-        body: 'bg-[#E9F7EF]',
-        text: 'text-[#163B2A]',
+        body: 'bg-[#eefbf6]',
+        text: 'text-black',
         dot: 'bg-[#19C76A]',
       },
       items: [
@@ -21,10 +23,10 @@ export default function Catagory() {
     {
       title: 'Home Services',
       theme: {
-        header: 'bg-[#16284C]',
+        header: 'bg-[#17253f]',
         iconWrap: 'bg-[#0E1F3B]',
-        body: 'bg-[#F1F5F9]',
-        text: 'text-[#17304C]',
+        body: 'bg-[#eff3f7]',
+        text: 'text-black',
         dot: 'bg-[#1CCB6D]',
       },
       items: [
@@ -39,10 +41,10 @@ export default function Catagory() {
     {
       title: 'Shopping & Fashion',
       theme: {
-        header: 'bg-[#00563A]',
+        header: 'bg-[#05442e]',
         iconWrap: 'bg-[#004A32]',
-        body: 'bg-[#E9F4EF]',
-        text: 'text-[#14382E]',
+        body: 'bg-[#eefbf6]',
+        text: 'text-blck',
         dot: 'bg-[#18C56A]',
       },
       items: [
@@ -57,10 +59,10 @@ export default function Catagory() {
     {
       title: 'Business Services',
       theme: {
-        header: 'bg-[#9ADBC2]',
-        iconWrap: 'bg-[#7BC9AC]',
-        body: 'bg-[#EDF9F2]',
-        text: 'text-[#173C31]',
+        header: 'bg-[#97e0c2]',
+        iconWrap: 'bg-[#5CC497]',
+        body: 'bg-[#eefbf6]',
+        text: 'text-black',
         dot: 'bg-[#19C76A]',
       },
       items: [
@@ -75,10 +77,10 @@ export default function Catagory() {
     {
       title: 'Sports',
       theme: {
-        header: 'bg-[#16284C]',
+        header: 'bg-[#17253f]',
         iconWrap: 'bg-[#0E1F3B]',
-        body: 'bg-[#F1F5F9]',
-        text: 'text-[#17304C]',
+        body: 'bg-[#eff3f7]',
+        text: 'text-black',
         dot: 'bg-[#1CCB6D]',
       },
       items: [
@@ -93,10 +95,10 @@ export default function Catagory() {
     {
       title: 'Health Medical',
       theme: {
-        header: 'bg-[#00563A]',
+        header: 'bg-[#05442e]',
         iconWrap: 'bg-[#004A32]',
-        body: 'bg-[#E9F4EF]',
-        text: 'text-[#14382E]',
+        body: 'bg-[#eefbf6]',
+        text: 'text-blck',
         dot: 'bg-[#18C56A]',
       },
       items: [
@@ -111,10 +113,10 @@ export default function Catagory() {
     {
       title: 'Animal & Pets',
       theme: {
-        header: 'bg-[#9ADBC2]',
-        iconWrap: 'bg-[#7BC9AC]',
-        body: 'bg-[#EDF9F2]',
-        text: 'text-[#173C31]',
+        header: 'bg-[#97e0c2]',
+        iconWrap: 'bg-[#5CC497]',
+        body: 'bg-[#eefbf6]',
+        text: 'text-black',
         dot: 'bg-[#19C76A]',
       },
       items: [
@@ -129,10 +131,10 @@ export default function Catagory() {
     {
       title: 'Events & Entertainment',
       theme: {
-        header: 'bg-[#16284C]',
+        header: 'bg-[#17253f]',
         iconWrap: 'bg-[#0E1F3B]',
-        body: 'bg-[#F1F5F9]',
-        text: 'text-[#17304C]',
+        body: 'bg-[#eff3f7]',
+        text: 'text-black',
         dot: 'bg-[#1CCB6D]',
       },
       items: [
@@ -147,10 +149,10 @@ export default function Catagory() {
     {
       title: 'Home & Garden',
       theme: {
-        header: 'bg-[#00563A]',
+        header: 'bg-[#05442e]',
         iconWrap: 'bg-[#004A32]',
-        body: 'bg-[#E9F4EF]',
-        text: 'text-[#14382E]',
+        body: 'bg-[#eefbf6]',
+        text: 'text-blck',
         dot: 'bg-[#18C56A]',
       },
       items: [
@@ -165,68 +167,52 @@ export default function Catagory() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#F3F5F4] px-6 py-5 md:px-10 lg:px-14">
-      <div className="mx-auto max-w-[1140px]">
+    <main className=" bg-white  px-6 pb-20 md:px-10 lg:px-14">
+      <div className="mx-auto max-w-5xl">
         <div className="mb-6 flex items-center justify-between">
-          <h1 className="text-[26px] font-semibold tracking-[-0.02em] text-[#142B43] md:text-[30px]">
+          <h1 className="font-'Poppins' font-semibold lg:text-[38px]  leading-[100%] tracking-[0%] text-[rgba(23,37,63,1)]] md:text-[30px] text-26px">
             Explore companies by category
           </h1>
-
-          <button className="inline-flex h-[38px] items-center gap-2 rounded-full border border-[#44D6A2] bg-white px-4 text-[13px] font-medium text-[#17304C] shadow-[0_1px_0_rgba(0,0,0,0.03)] transition hover:bg-[#F8FFFC]">
-            <span>See More</span>
-            <span className="text-[14px]">→</span>
-          </button>
+          <Link href="/SingleCatagoryPage">
+            <button className="inline-flex h-[43px]  items-center gap-2 rounded-full border border-[#04da8d]  bg-white px-4 lg:text-[18px] md:text-[16px] text-[12px] font-medium text-[#17253f] shadow-[0_1px_0_rgba(0,0,0,0.03)] transition hover:bg-[#F8FFFC]">
+              <span>See More</span>
+              <span className="text-[14px]">→</span>
+            </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
           {categories.map((category) => (
             <div
               key={category.title}
-              className="overflow-hidden rounded-[14px] bg-transparent shadow-none"
+              className="overflow-hidden   rounded-[14px]  bg-transparent shadow-none"
             >
               <div
-                className={`flex h-[52px] items-center gap-3 rounded-t-[14px] px-4 text-white ${category.theme.header}`}
+                className={`flex h-[52px]  items-center gap-3 rounded-t-[14px] px-4 text-white ${category.theme.header}`}
               >
-                <div
-                  className={`flex h-[24px] w-[24px] items-center justify-center rounded-md ${category.theme.iconWrap}`}
-                >
-                  <svg
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="opacity-95"
-                  >
-                    <path
-                      d="M3 5.25A2.25 2.25 0 0 1 5.25 3h8.5A2.25 2.25 0 0 1 16 5.25v13.5A2.25 2.25 0 0 1 13.75 21h-8.5A2.25 2.25 0 0 1 3 18.75V5.25Z"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                    />
-                    <path
-                      d="M16 7h2.75A2.25 2.25 0 0 1 21 9.25v6.5A2.25 2.25 0 0 1 18.75 18H16"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                    />
-                    <path d="M6.5 7.5h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                    <path d="M6.5 11.5h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                    <path d="M6.5 15.5h2.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                  </svg>
-                </div>
+
+                <Image
+                  src="/Images/catagorydetail2.svg"
+                  alt="star"
+                  width={28}
+                  height={28}
+                  className="sm:w-6 sm:h-6  md:w-7 md:h-7"
+                />
+
+
                 <h2 className="text-[14px] font-semibold leading-none tracking-[-0.01em]">
                   {category.title}
                 </h2>
               </div>
 
-              <div className={`${category.theme.body} rounded-b-[14px]`}>
+              <div className={`${category.theme.body}  rounded-b-[14px]`}>
                 {category.items.map((item, index) => (
                   <div
                     key={item}
-                    className={`flex h-[42px] items-center justify-between px-4 ${
-                      index !== category.items.length - 1
-                        ? 'border-b border-[#DDE7E3]'
-                        : ''
-                    }`}
+                    className={`flex h-[42px] items-center  px-4 ${index !== category.items.length - 1
+                      ? 'border-b border-[#DDE7E3]'
+                      : ''
+                      }`}
                   >
                     <div className="flex min-w-0 items-center gap-2.5">
                       <span
@@ -238,7 +224,7 @@ export default function Catagory() {
                         {item}
                       </span>
                     </div>
-                    <span className="ml-3 flex-shrink-0 text-[14px] text-[#17304C]">→</span>
+                    <span className="ml-3  flex-shrink-0 text-[14px] text-[#17304C]">→</span>
                   </div>
                 ))}
               </div>

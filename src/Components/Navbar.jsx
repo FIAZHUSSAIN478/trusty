@@ -96,18 +96,19 @@ export default function Navbar() {
         </div>
       )}
       {menuOpen && (
-        <div className="lg:hidden bg-[url('/Images/Hero-bg.svg')] bg-cover bg-star  ">
-          {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="text-[#17253F]  font-medium border-b border-[#17253F26] w-full  flex flex-col justify-center items-center md:items-start p-2 px-4 w-full gap-4">
-              {item.name}
-            </Link>
-
-          ))
-
-          }
-
+        <div className="lg:hidden absolute left-0 right-0 md:top-26 top-43 bg-white shadow-xl border-t border-[#17253F26] z-[1000]">
+          <div className="max-w-7xl mx-auto">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-[#17253F] font-medium border-b border-[#17253F26] w-full flex items-center justify-center md:items-start p-4 gap-4 bg-white"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
         </div>
-
       )}
 
 
