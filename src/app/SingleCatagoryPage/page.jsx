@@ -5,8 +5,8 @@ import React from 'react'
 export default function SingleCatagorypage() {
   return (
     <div>
-      {/* <SingleCatagorySection1/> */}
-      {/* <SingleCatagorySection2/> */}
+      <SingleCatagorySection1/>
+      <SingleCatagorySection2/>
     </div>
   )
 }

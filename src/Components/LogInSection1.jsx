@@ -128,7 +128,7 @@ export default function LoginSection1() {
                 </div>
 
             </div>
-            {/* <BusinessCard /> */}
+            
 
         </div>
 
